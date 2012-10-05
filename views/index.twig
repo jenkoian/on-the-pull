@@ -1,0 +1,17 @@
+{% extends 'layout.twig' %}
+{% block body %}
+    <ul>
+    {% for name,pullRequest in pullRequests %}
+        {% if pullRequest is not empty %}
+            <li class="client">
+                <h1>{{ name }}</h1>
+                <ul>
+                    {% for pull in pullRequest %}
+                        <li>{{ pull.title }} ({{ pull.user.login }}) - created <time class="timeago" datetime="{{ pull.created_at }}"></time></li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+{% endblock %}

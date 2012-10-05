@@ -1,0 +1,36 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.client {
+   	border-radius: 20px;
+   	-moz-border-radius: 20px;
+   	background-color: green;
+   	color: #ffffff;
+   	overflow: auto;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.client h1 {
+    margin: 5px;
+}
+
+.client ul {
+    padding: 5px 0;
+}
